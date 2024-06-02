@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Surya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7be4570a89.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="container">
+        <div class="Res_nav" >
+        <div class="Res_logo" >
+            <img  class="logo" src="images/logo.png" alt="">
+        </div>
+            <div class="Res_pages" >
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#wrapper">Menú</a>
+                    </li>
+                    <li>
+                        <a href="#pie-pagina">Extras</a>
+                    </li>
+                    <li>
+                        <a href="#banner">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="contant" id="contant">
+            <div class="Eslogan">
+                <span>SURYA</span>
+            <h1>LA DELICIA <br>del paladar</h1>
+            </div>
+        </div>
+    <main class="bienvenida">
+            <img  class="imagen" src="images/inicio.webp" alt="">
+        <div class="slogan">
+            <h1 class="title">BIENVENIDOS <br> A SURYA</h1>
+            <h2>DONDE LOS SABORES SE ENTRELAZAN <br>Y LOS SENTIDOS DESPIERTAN</h2>
+            <p>En Surya, no solo servimos platos exquisitos, sino también experiencias inolvidables. Desde el momento en que cruzas nuestras puertas, te sumergirás en un viaje culinario que combina la tradición de la gastronomía india con un toque contemporáneo. 
+            <br>
+            <br>
+            Nuestro equipo de chefs apasionados trabajan incansablemente para crear platos que te hagan viajar a las calles de Delhi, Mumbai y más allá.  Cada especia, cada hierba fresca, se selecciona  con amor y cuidado paraofrecerte autenticidad en cada bocado.
+            </p>
+        </div>
+    </main>
+    <main class="calidad">
+        <div class="f-calidad">
+            <h1>CALIDAD</h1>
+            <h2>PLATOS LLENOS DE COLOR</h2>
+            <p>En Surya, nos enorgullece utilizar ingredientes frescos y ofrecer opciones vegetarianas, veganas y sin gluten. Tenemos la comida saludable en el ADN, nuestro objetivo es brindarte opciones saludables y deliciosas. Llenaremos de color tu plato, componiendo auténticas obras visuales que querrás instagramear.
+            <br>
+            <br>
+            Tenemos un asiento reservado para ti si buscas un brunch confiable, además, de la mano de nuestros baristas, disfrutarás de todo el sabor del café de especialidad, acompañado de tus familiares o amigos, ¡incluso con tu mascota!</p>
+        </div>
+        <img src="images/calidad.webp" alt="">
+    </main>
+    <div class="texto-surya">
+        <h1>SURYA</h1>
+        <P class="lo-mejor">no es solo un restaurante; es una experiencia sensorial completa que celebra la alegría de la buena comida y la excelente compañía. Cada visita a Surya es una oportunidad para descubrir nuevos sabores, disfrutar de un servicio impecable y sumergirse en una atmósfera que combina lo mejor de la tradición y la innovación.</P>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="card">
+            <img src="images/ensalada.jpg" alt="">
+            <div class="info">
+                <h1>Ensalada de sandía y queso feta</h1>
+                <p>Esta refrescante ensalada de sandía y queso feta es una receta simple y sin complicaciones lista en menos de 10 minutos! </p>
+                <a href="#1" class="btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/pizzaa.jpg" alt="">
+            <div class="info">
+                <h1>Pastel de salmón salado</h1>
+                <p>Apetitoso, cremoso y lleno de sabor, nuestra tarta salada de salmón con la Thermomix, un atractivo plato principal de verano.</p>
+                <a href="#2" class="btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/rabioli.jpg" alt="">
+            <div class="info">
+                <h1>Raviolis de albahaca</h1>
+                <p>Los raviolis de albahaca rellenos de jamón con tomate fresco son el plato perfecto para preparar cuando tienes invitados para comer. </p>
+                <a href="#3" class="btn">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/arrozzz.jpg" alt="">
+            <div class="info">
+                <h1>Arroz al horno vegano</h1>
+                <p>El arroz al horno vegano es una versión ideal si se desea comer con un intenso sabor y sano.</p>
+                <a href="#4" class="btn">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <section class="banner" id="banner">
+        <h2>RESERVA TU MESA</h2>
+        <div class="card-contenedor">
+        <div class="card-img"></div>
+        <div class="card-contenido">
+            <h3>Reserva</h3>
+            <form id="reservar-mesa">
+            <div class="form-row">
+                <input type="date" id="fecha" name="fecha" />
+                <input
+                type="time"
+                id="hora"
+                name="hora"
+                min="10:00"
+                max="24:00"
+                required
+                />
+            </div>
+            <div class="form-row">
+                <input
+                type="text"
+                placeholder="Nombre completo"
+                id="nombre"
+                name="nombre"
+                />
+                <input
+                type="text"
+                placeholder="Telefono"
+                id="telefono"
+                name="telefono"
+                />
+            </div>
+            <div class="form-row">
+                <input
+                type="number"
+                placeholder="Personas por mesa"
+                id="personas"
+                name="personas"
+                min="1"
+                />
+                <input type="submit" value="RESERVAR MESA" />
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    </div>
+    <footer class="pie-pagina" id="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="images/logoogogo-removebg-preview (2).png" alt="logo de surya">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>HORARIOS</h2>
+                <span>Lunes a Jueves</span><br>
+                <span>12:00h - 23:00h</span><br>
+                <span>Viernes y sábado</span><br>
+                <span>12:00h - 00:00h</span><br>
+                <span>Domingo</span><br>
+                <span>12:30h - 17:00h</span>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#1" class="fa fa-facebook" ></a>
+                    <a href="#2" class="fa fa-instagram" ></a>
+                    <a href="#3" class="fa fa-twitter" ></a>
+                    <a href="#4" class="fa fa-youtube" ></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Surya</b> - Todos los Derechos Reservados. </small>
+        </div>
+    </footer>
+</body>
+</html>
