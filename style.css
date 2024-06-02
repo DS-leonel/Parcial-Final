@@ -37,7 +37,7 @@ section[id] {
     scroll-margin-top: 70px;
 }
 
-/*SECTION HOME */
+/*SECCION INICIO */
 .container {
     background-color: #0c826d;
     position: fixed;
@@ -47,11 +47,11 @@ section[id] {
     z-index: 100;
 }
 
-/* NAV */
+/* INICIO NAVEGACION */
 .Res_pages > ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 250px;
 }
 
@@ -83,8 +83,10 @@ a:hover, a.ex2:active {
     justify-content: space-between;
     padding: 20px 100px 0px;
 }
+/* FIN NAVEGACION */
+/* FIN  INICIO*/
 
-/* HEADER*/
+/* INICIO HEADER*/
 .contant {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
     url(images/Restaurantes_Comida_Internacional.webp);
@@ -116,7 +118,9 @@ a:hover, a.ex2:active {
 span h1 {
     color: #ffffff;
 }
+/* FIN HEADER */
 
+/* INICIO BIENVENIDA */
 .bienvenida {
     margin-bottom: 30PX;
 }
@@ -189,7 +193,9 @@ p::after {
 .calidad {
     margin-bottom: 100px;
 }
+/* FIN BIENVENIDA */
 
+/* INICIO TEXTO */
 .texto-surya, .lo-mejor {
     text-align: center;
     font-size: 30px;
@@ -206,8 +212,9 @@ p::after {
     font-size: 100px;
     margin-bottom: 30px;
 }
+/* FIN TEXTO */
 
-/* STAR CARD */
+/* INICIO CARTA */
 html, body .wrapper {
     width: 100%;
     height: 100%;
@@ -305,9 +312,9 @@ html, body .wrapper {
 .card .info .btn:hover {
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
 }
-/* END CARD */
+/* FIN CARTA */
 
-/* STAR RESERVA */
+/* INICIO RESERVAS */
 .banner{
     min-height:100vh;
     display: flex;
@@ -316,7 +323,7 @@ html, body .wrapper {
     align-items: center;
     color:#ffff;
     padding-bottom:20px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .card-contenedor {
@@ -366,7 +373,6 @@ html, body .wrapper {
     margin: 0 auto;
 }
 
-
 form select, form input {
     display:block;
     width:100%;
@@ -401,13 +407,11 @@ form input[type = submit]:hover{
     opacity: 0.9;
 }
 
-
 #reservas{
     display:grid;
     grid-template-columns: 293px 293px 293px;
     grid-gap: 15px 15px;
 }
-
 
 @media(max-width:992px){
     .card-contenedor {
@@ -429,9 +433,71 @@ form input[type = submit]:hover{
     #reservas {
         padding:0;
     }
-/* END RESERVA */
+/* FIN RESERVAS*/
 
-/* STAR FOOTER */
+/* SECCION OPINIONES */
+.opiniones h1 {
+    padding-bottom:40px;
+    margin-bottom:20px;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+}
+
+.opiniones {
+    margin-bottom: 250px;
+}
+
+.opiniones .caja-contenedor .caja {
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    cursor: default;
+}
+
+.opiniones .caja-contenedor .caja .user img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 8rem;
+    width: 8rem;
+    margin-top: 2rem;
+
+}
+
+.opiniones .caja-contenedor .caja .user h3 {
+    color: #000;
+    font-size: 2rem;
+}
+
+.opiniones .caja-contenedor .caja .user .stars i {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.opiniones .caja-contenedor .caja .comentarios {
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.opiniones .caja-contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FIN OPINIONES */
+
+/* INICIO FOOTER */
 
 .pie-pagina {
     width: 100%;
@@ -499,3 +565,4 @@ form input[type = submit]:hover{
 .pie-pagina .grupo-2 small {
     font-size: 15px;
 }
+/* FIN FOOTER */
