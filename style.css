@@ -254,7 +254,7 @@ html, body .wrapper {
     left: 0;
     display: block;width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgb(12, 130, 109,0.5), rgba(150,201,61,1));
+    background: linear-gradient(to bottom, rgba(82, 78, 78, 0.5), rgba(51, 48, 48, 0.5));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -307,6 +307,7 @@ html, body .wrapper {
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    border-radius: 50px;
 }
 
 .card .info .btn:hover {
